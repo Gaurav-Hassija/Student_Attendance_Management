@@ -80,12 +80,12 @@ include_once ("includes/header.php");
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-users"></i>
                   </div>
-                  <div class="mr-5"><?php $tablename = "teacher";
+                  <div class="mr-5"><?php $tablename = "parent";
 					  $count = countNumberOfRows($tablename);
 					  echo $count; 
 					  ?> PARENTS</div>
                 </div>
-                <a class="card-footer text-white clearfix small z-1" href="#">
+                <a class="card-footer text-white clearfix small z-1" href="view_parents.php">
                   <span class="float-left">View Details</span>
                   <span class="float-right">
                     <i class="fas fa-angle-right"></i>
