@@ -49,6 +49,7 @@ include_once ("includes/header.php");
 		  $date = $_POST['date'];
 		  $column_name = str_replace("-","_",$date);
 		  $_SESSION['column_name']=$column_name;
+		  $_SESSION['class_id']=$class_name_id;
 		  
 	  }
 			$sql="select class_name from class where class_id = $class_name_id";
