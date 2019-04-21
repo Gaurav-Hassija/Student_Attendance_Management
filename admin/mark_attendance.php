@@ -79,7 +79,7 @@ include_once ("includes/header.php");
             <tr>
                 <th>Rollno</th>
                 <th>name</th>
-                <th>Present</th>
+                <th>Mark Absent</th>
             </tr>
         </thead>
         <tfoot>

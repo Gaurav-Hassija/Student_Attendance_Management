@@ -89,47 +89,7 @@ include_once ("includes/header.php");
                                             </div>
                                             </div>
                                             
-                                            <div class="col-md-6">
-                                                <div class="class-container-2">
-                                                    <strong><p>Attendance Overview</p></strong>
-                                                                                                 
-       <table class="table">
-        <thead>
-            <tr>
-                <th>RollNo</th>
-                <th>Name</th>
-                <th>Attendance</th>
-                <th>Commment</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td>[Title]</td>
-                <td>[Title]</td>
-                <td>[Title]</td>
-                <td>data</td>
-            </tr>        
-        </tfoot>
-        <tbody>
-            <tr>
-                <td>[data]</td>
-                <td>[data]</td>
-                <td>[data]</td>
-                <td>data</td>
-            </tr>
-            <tr>
-                <td>[data]</td>
-                <td>[data]</td>
-                <td>[data]</td>
-                <td>data</td>
-            </tr>
-            
-            
-        </tbody>
-    </table>
-
-                                                </div>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>

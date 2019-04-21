@@ -34,7 +34,7 @@ include_once ("includes/header.php");
                                     <li class="breadcrumb-item">
                                         <a href="index.php">Dashboard</a>
                                     </li>
-                                    <li class="breadcrumb-item active"> view attendance</li>
+                                    <li class="breadcrumb-item active"> Defaulter</li>
                                 </ol>
                                 <div class="row">
                                     <div class="col-md-12">
@@ -44,7 +44,7 @@ include_once ("includes/header.php");
 											</div>
                                             <div class="col-md-10">
                                             <div class="class-container">
-                                               <form action="view_attendance_process.php" method ="post">
+                                               <form action="view_defaulter.php" method ="post">
                                                 <strong><p>Select Class</p></strong>
                                             <select name="class_name" id="class_name" class="form-control"> 
                                                 			<?php
@@ -86,7 +86,10 @@ include_once ("includes/header.php");
                         </select>
                                             <br>
                                            
-                                          <button type="submit" name="view_attendance" class = "btn btn-primary">View Attendance</button>
+                                          <button type="submit" name="normal_defaulter" class = "btn btn-primary">Normal Defaulter</button>
+                                           <button type="submit" name="critical_defaulter" class = "btn btn-danger">Critical Defaulter</button>
+
+                                          
                                            
  									
                                            </form>									

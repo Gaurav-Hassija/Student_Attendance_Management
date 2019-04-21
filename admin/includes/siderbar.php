@@ -28,7 +28,7 @@
             <span>Attendance</span></a>
     </li>
            <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="defaulter.php">
             <i class="fas fa-fw fa-minus"></i>
             <span>Defaulter</span></a>
     </li>
