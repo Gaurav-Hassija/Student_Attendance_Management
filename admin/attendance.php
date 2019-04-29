@@ -40,7 +40,8 @@ include_once ("includes/header.php");
                                     <div class="col-md-12">
                                        <p class="attendance-report">attendance report</p>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                           <div class="col-md-2"></div>
+                                            <div class="col-md-8">
                                             <div class="class-container">
                                                <form action="mark_attendance.php" method ="post">
                                                 <strong><p>Select Class</p></strong>

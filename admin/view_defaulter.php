@@ -72,7 +72,7 @@ include_once ("includes/header.php");
     			$res1=mysqli_query($connection,$query1);
 			?>
 
-  			 <table style="width:100%">
+  			 <table style="width:100%" id = "critical">
         <thead>
     <tr>
        <?php
@@ -100,7 +100,7 @@ include_once ("includes/header.php");
        <th>Lectures Attended</th>-->
        <th>Attendance Percentage</th>
         </tr></thead>
-            <tbody>
+            <tbody style = "text-align : center">
             <tr>
             <?php
 						
@@ -128,11 +128,14 @@ include_once ("includes/header.php");
 			
                 ?>            
             </tbody>
-            
+            	  
             </table>
+           <br>
+                   <button class = "btn btn-primary" onclick="printPage1()" style = "float : right"> DOWNLOAD </button>
             <?php 
 			}
 				?>
+				 
 		<?php  
 	if(isset($_POST['normal_defaulter'])){
 	  if(isset($_POST['normal_defaulter'])){
@@ -162,7 +165,7 @@ include_once ("includes/header.php");
     			$res1=mysqli_query($connection,$query1);
 			?>
 
-  			 <table style="width:100%">
+  			 <table style="width:100%" id = "normal">
         <thead>
     <tr>
        <?php
@@ -190,7 +193,7 @@ include_once ("includes/header.php");
        <th>Lectures Attended</th>-->
        <th>Attendance Percentage</th>
         </tr></thead>
-            <tbody>
+            <tbody style = "text-align : center">
             <tr>
             <?php
 						
@@ -220,9 +223,15 @@ include_once ("includes/header.php");
             </tbody>
             
             </table>
+             <br>
+                   <button class = "btn btn-primary" onclick="printPage()" style = "float : right"> DOWNLOAD </button>
+           
             <?php
 	}
 		?>
+                 
+                  
+
 
         </div>
         <!-- /.container-fluid -->
@@ -237,5 +246,31 @@ include_once ("includes/header.php");
     ?>
 
   </body>
+  <script>
+	function printPage1(){
+    html = document.getElementById('critical').outerHTML;
+    var mystyle;
+    mystyle1 = '<link rel="stylesheet" href="table.css" media="all"/>';
+    // Opening an untitled page where print view of ID cards is shown
+    var w = window.open("");
+    // Attaching style (.css) with html
+  
+    w.document.write( mystyle+html);
+		w.window.print();
+			
+}</script>
+<script>
+	function printPage(){
+    html = document.getElementById('normal').outerHTML;
+    var mystyle;
+    mystyle = '<link rel="stylesheet" href="table.css" media="all"/>';
+    // Opening an untitled page where print view of ID cards is shown
+    var w = window.open("");
+    // Attaching style (.css) with html
+  
+    w.document.write( mystyle+html);
+		w.window.print();
+			
+}</script>
 
 </html>

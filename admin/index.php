@@ -80,7 +80,7 @@ include_once ("includes/header.php");
                   <div class="card-body-icon">
                     <i class="fas fa-fw fa-users"></i>
                   </div>
-                  <div class="mr-5"><?php $tablename = "parent";
+                  <div class="mr-5"><?php $tablename ="parent";
 					  $count = countNumberOfRows($tablename);
 					  echo $count; 
 					  ?> PARENTS</div>

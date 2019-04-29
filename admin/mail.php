@@ -3,12 +3,13 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require('C:\xampp\htdocs\php mailer\vendor\autoload.php');
-function send_mail($user_email){
+function send_mail($user_email,$user_name){
 $subj = "STUDENT ATTENDANCE";
         // the message
         $msg = "Dear Parent, This mail is to inform you that your son/daughter has attendance below 50%. You are free to Meet or Speak to Class teacher, HOD madam or Attendance incharge regarding Attendance of your student.
 		Regards
 		VESIT.";
+		
 
         // use wordwrap() if lines are longer than 70 characters
         $msg = wordwrap($msg,70);

@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
     $title = "Attendance view";
 session_start();
 ?>
@@ -6,11 +7,11 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<style>
         table,td,th{
             border:3px solid black;
             border-collapse: collapse;
-            
         }
 	</style>
 </head>
@@ -71,7 +72,7 @@ include_once ("includes/header.php");
     			$res1=mysqli_query($connection,$query1);
 			?>
 
-  			 <table style="width:100%">
+  			 <table style = width:100% id = "attendance">
         <thead>
     <tr>
        <?php
@@ -99,8 +100,8 @@ include_once ("includes/header.php");
        <th>Lectures Attended</th>
        <th>Attendance Percentage</th>
         </tr></thead>
-            <tbody>
-            <tr>
+            <tbody style = "text-align : center">
+            <tr >
             <?php
 						
 				$qry="SELECT *,($query_string) as count from $table_name";
@@ -133,18 +134,35 @@ include_once ("includes/header.php");
             </tbody>
             
             </table>
+            
+            	<br>
+           <button class = "btn btn-primary" onclick="printPage()" style = "float : right"> DOWNLOAD </button>
+            
 
         </div>
         <!-- /.container-fluid -->
 
       </div>
       <!-- /.content-wrapper -->
-	
+
     </div>
     <?php
         include_once ("includes/footer.php");
     ?>
 
   </body>
+  <script>
+	function printPage(){
+    html = document.getElementById('attendance').outerHTML;
+    var mystyle;
+    mystyle = '<link rel="stylesheet" href="table.css" media="all"/>';
+    // Opening an untitled page where print view of ID cards is shown
+    var w = window.open("");
+    // Attaching style (.css) with html
+  
+    w.document.write( mystyle+html);
+		w.window.print();
+			
+}</script>
 
 </html>

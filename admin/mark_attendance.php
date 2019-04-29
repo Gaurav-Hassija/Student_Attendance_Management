@@ -10,6 +10,7 @@ session_start();
         table,td,th{
             border:3px solid black;
             border-collapse: collapse;
+			table-layout: fixed;
             
         }
 	</style>
@@ -75,7 +76,7 @@ include_once ("includes/header.php");
         
             <!-- Modal body -->
                      <form action="process_attendance.php" method ="post">
-                      <table class="table">
+                      <table class="table" id= "attendance">
         <thead>
             <tr>
                 <th>Rollno</th>
